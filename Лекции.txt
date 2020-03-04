@@ -1,0 +1,104 @@
+Frontend && Backend
+API  -  мост м/у Frontend && Backend -> DB
+v8 - движок который читает js код, есть в каждом браузере по умолчанию
+
+
+element.style {
+    transition: 5s;
+}
+
+transition: 5s; - плавное изменение за 5 секунд
+
+transform: translate(0, 57px); - перемещение элемента
+
+setTimeout(function() {
+console.log("hello")
+}, 5000) - выводит hello за 5 секунд	
+
+clearTimeout(id) - очищает Timeout 
+
+function a (n){                - Рекурция
+    n++
+    setTimeout(function(){
+        console.log(n)
+        if(n>10)return;
+        a(n)
+    },3000)
+}
+
+Order - приаритет
+{display-flex;}
+
+
+{order: -1} 
+align-self: flex-end - перемещает отдельный элемент
+
+
+transform: scale(2) - вырезает 2 передних элемента
+
+псевдоэлементы before и after 
+after(после)
+before(перед)
+
+.elem::after{внутри блока elem
+content:'0';}content создает псевдоелемент-0
+
+.elem::before{внутри блока elem
+content:'1';} 1-встанет преред 0
+
+Одаптивная верстка
+Bootstrap - 
+@media screen and (max-whidth:600px){} - сработает при ширине менше чем 600px
+
+
+Java Sqript
+Типы данных
+str = 'string'
+num = 25
+bool = false
+undefined;
+nullS = null
+obj = {};
+sumbol = Symbol();
+
+obj это ссылочный тип данных 
+
+Bootsrtap
+
+ofset - 2 -
+
+
+24.02
+Agile
+Scrum 
+q&a -  подготовить не понятные вопросы
+trello
+github
+
+react 
+redux
+firebase
+
+Интерпритатор
+Компилятор
+
+из строки в число
++         
+parseInt
+pasrseFloat
+
+из числа в строку
+''
+toString
+
+из чтроки в bool
+!!
+
+фроктал - фигура повторяюшая саму себя
+
+Тернарный оператор - условная конструкция который записывает в переменную одну из двух
+let a = bool ? 'Hello' : 'Hi'
+Если bool=true то a='Hello' bool=false то a='Hi'
+
+git - распределенная система контроля версий
+master - основаная ветка

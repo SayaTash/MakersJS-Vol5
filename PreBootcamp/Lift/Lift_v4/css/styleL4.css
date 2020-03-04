@@ -1,0 +1,77 @@
+.BlockAll {
+    background-color: #2cd65f82;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 370px;;
+    padding: 20px;
+}
+
+.btns {
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.inp {
+    width: 120px;
+    height: 30px;
+    display: flex;
+}
+
+.upBtn {
+    cursor: pointer;
+    width: 96px;
+    height: 96px;
+    background: url("../img/up.png") center no-repeat;
+}
+
+.goBtn {
+    cursor: pointer;
+    width: 96px;
+    height: 96px;
+    background: url("../img/go.png") center no-repeat;
+}
+
+.downBtn {
+    cursor: pointer;
+    width: 96px;
+    height: 96px;
+    background: url("../img/down.png") center no-repeat;
+}
+
+.blockResult {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgba(159, 17, 17, 0.51);
+}
+
+.blockLift{
+    height: 505px;
+    width: 50px;
+    border: 4px solid #793535;;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 30px;
+}
+
+.lift{
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    border: 4px solid rgb(92, 193, 27);
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

@@ -1,0 +1,54 @@
+
+    var floor = 1;
+    var max_floor = 16;
+    var min_floor = 1;
+
+function up(){
+    if (floor < max_floor){
+        floor++;
+        print()
+    }
+};
+
+function down(){
+    if (floor > min_floor){
+        floor--;
+        print()
+    }
+};
+
+function print (){    
+    var result = document.querySelector('.blockResult');
+    result.innerHTML = `Вы на ${floor} - этаже`
+}
+
+function toFloor(n){
+    n++
+    setTimeout(function(){
+        if(n==floor || n>max_floor || n<min_floor){
+            return
+        }
+        if (n<floor){
+            down()
+        }        
+        else if (n>floor){
+            up()
+        }
+
+    },1000)
+
+}
+
+
+
+var input1 = document.querySelector('.inp');
+var btn1 = document.querySelector('.btn');
+btn1.addEventListener('click', function() {
+    n = input1.value
+    //for(let i=floor; i<n;i++){
+        if (1<=n<=16){
+            toFloor(n)
+        }   
+    //}
+
+ });

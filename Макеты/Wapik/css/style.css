@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400,700&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: url("../images/1.jpg") no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff85;
+    height: 10%;
+}
+
+.header_nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    padding-right: 25px;
+    margin: 0;
+    margin-right: 25px;
+    border-right: 1px solid #ffffff85;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-phone_block {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.nav-phone_icon {
+    background-size: cover;
+    padding: 7px;
+    background: url("../images/phone.png") no-repeat;
+    margin-right: 10px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu_item {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #ffffff8c;   
+    cursor: pointer;
+    transition: .2s;
+}
+
+.menu_item.bold {
+    color: #fff;
+}
+
+.menu_item:hover {
+    color: #fff;
+    background-color: #ffffff6e;
+    border-radius: 5px;
+}
+
+
+.header_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 90%;
+}
+.header_body-title {
+    font-size: 38px;
+    margin: 0;
+}
+.header_body-desc {
+    margin: 12px 0;
+    font-size: 20px;
+    max-width: 34rem;
+}
+.header_body-btn {
+    text-transform: uppercase;
+    background-color: #6fb048;
+    border: none;
+    padding: 20px 46px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main {
+    min-height: 100vh;
+}
+.main-desc {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #0f5f5c;
+    margin-top: 50px;
+}
+.main-title {
+    font-weight: 300;
+    font-size: 39px;
+    margin: 0;
+
+}
+.main-title-line {
+    height:2px;
+    background-color: #6fb048;
+    width: 14%;
+    margin: 12px auto;
+}
+.main_desc {
+    font-size: 15px;
+    color: #83a7a5;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.features h5{
+    color: #0f5f5c;
+    margin: 16px 0;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+.features p{
+    color: #83a7a5;
+    margin: 0;
+    font-size: 13px;
+}
+
+.first-features_item {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.first-featers_img {
+    height: 45px;
+}
+
+.stick {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 40px 0 0 0;
+}
+.stick1 {
+    width: 2px;
+    height: 90px;
+    background-color: #00000030;
+}
+.stick2 {
+    width: 90px;
+    height: 2px;
+    background-color: #00000030;
+}
+
+.second-features_item {
+    max-width: 40%;
+}
+.second_features_title {
+    display: flex;
+    align-items: center;
+    
+}
+.second-features-img {
+    margin: 0 16px 0 0;
+}
+
+
+
+@media screen and (max-width: 1090px){
+    .container{
+        padding: 0 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 993px){
+    .menu{
+        display: none;
+    }
+    .burger_menu {
+        width: 50px;
+        height: 40px;
+    }
+    .line {
+        width: 30px;
+        height: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-features , .second-features {
+        width: 100%;
+        padding-top: 20px;
+
+    }
+    .first-features_img {
+        height: auto;
+        width: 60px;
+    }
+    .first-features_img {
+        height: auto;
+        width: 60px;
+    }
+
+    .stick {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nav-phone_number {
+        display: none;
+    }
+
+    .header_body-desc {
+        font-size: 3vw;
+    }
+}

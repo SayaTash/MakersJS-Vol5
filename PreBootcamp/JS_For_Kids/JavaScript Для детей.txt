@@ -1,0 +1,50 @@
+//Рисуем котиков
+var drawCat = function (howManyTimes) {
+for (var i = 0; i < howManyTimes; i++) {
+ console.log(i + " =^.^=");
+}
+};
+drawCat(10); // Вместо 10 тут может быть другое число
+
+массивы- 
+cоздание массива - var dinosaurs = ["Тираннозавр", "Велоцираптор"];
+доступ к массивам- dinosaurs[0]; "Тираннозавр"
+изменение массива - dinosaurs[0] = "Тираннозавр рекс";
+добавление эл - dinosaurs[2] = "новый элемент";
+
+mas.length; - Возвращает длину массива mas
+mas[mas.length -1]; - возвращает последний элемент массива
+
+mas.push("lama"); - добавляет эл lama в конец массива
+mas.unshift("hello") - добавляет эл hello в начало массива
+
+mas.pop() - удаляет последний элемент и выводит
+mas.shift() - удаляет первый элемент и выводит
+
+mas.concat(mas2, mas3) - соединяет элементы массивов mas+mas2+mas3
+
+mas.indexOf("элемент") - воз-ет индекс элемента, if элемент не найден воз-ет (-1)
+
+mas.join(); - соединяет все элементы в одну строку
+mas.join(" "); - |-|-| и разделяет элементы пробелом
+
+str.split() - строку str превращает в массив
+
+Стек это стопка блинов. LIFO(last in last out)
+Очередь FIFO(first in first out)
+
+Math.random() — случайное число от 0 до 1
+Math.floor() - округляет в меньшую сторону
+Math.floor(Math.random()*10) - воз-ет число от до 10
+
+function Rand(){
+var telo = ["глаза", "лицо", "губы"];
+var predlog = ["как", "словно", "похоже на"];
+var slovo = ["космос", "лепестки розы", "мед"];
+var telo = telo[Math.floor(Math.random()*3)];
+var predlog = predlog[Math.floor(Math.random()*3)];
+var slovo = slovo[Math.floor(Math.random()*3)];
+var randomR = ["Твои", telo, predlog, slovo, "!!!"];
+console.log(randomR.join(" "));}
+
+

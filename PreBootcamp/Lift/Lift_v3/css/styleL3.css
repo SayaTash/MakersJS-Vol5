@@ -1,0 +1,53 @@
+.BlockAll {
+    background-color: #2cd65f82;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    padding: 20px;
+}
+
+.blockInterface {
+    width: 210px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.inp {
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.btn {
+    height: 30px;
+    margin-bottom: 432px;
+}
+
+.blockResult {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    border: 4px solid rgba(159, 17, 17, 0.51);
+}
+
+.blockLift{
+    height: 505px;
+    width: 50px;
+    border: 4px solid #793535;;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.lift{
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    border: 4px solid rgb(92, 193, 27);
+    transition: 0.4s;
+}
+
+

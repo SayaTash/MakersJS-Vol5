@@ -1,0 +1,39 @@
+
+var floor = 1;
+var max_floor = 16;
+var min_floor = 1;
+var result = document.querySelector('.blockResult');
+var input1 = document.querySelector('.inp');
+var btn1 = document.querySelector('.btn');
+var $blockLift = document.querySelector('.blockLift');
+var $lift = document.querySelector('.lift');
+
+$blockLift.style.height = "500px"
+
+var floorHeight = parseInt($blockLift.style.height)/max_floor
+
+$lift.style.height = floorHeight+"px"
+
+
+function recursion(z){
+    result.innerHTML = `Вы на ${floor} - этаже`;
+    $lift.innerHTML = `${floor}`;
+    $lift.style.bottom = (floorHeight*floor-floorHeight)+"px";
+    setTimeout(function(){
+        if (z==floor){
+            return
+        }
+        if (z<floor && floor > min_floor){
+            floor--;
+        }        
+        else if (z>floor && floor < max_floor){
+            floor++;
+        }
+        recursion(z)
+    },1000)
+}
+
+btn1.addEventListener('click', function(){
+    
+    recursion(+input1.value)
+})

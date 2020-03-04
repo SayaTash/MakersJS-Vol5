@@ -1,0 +1,94 @@
+mas.length; - Возвращает длину массива mas
+mas[mas.length -1]; - возвращает последний элемент массива
+
+mas.push("lama"); - добавляет эл lama в конец массива
+mas.unshift("hello") - добавляет эл hello в начало массива
+
+mas.pop() - удаляет последний элемент и выводит
+mas.shift() - удаляет первый элемент и выводит
+
+mas.concat(mas2, mas3) - соединяет элементы массивов mas+mas2+mas3
+
+mas.indexOf("элемент") - воз-ет индекс элемента, if элемент не найден воз-ет (-1)
+
+mas.join(); - соединяет все элементы в одну строку
+mas.join(" "); - |-|-| и разделяет элементы пробелом
+
+str.split() - строку str превращает в массив
+
+Math.random() — случайное число от 0 до 1
+Math.floor() - округляет в меньшую сторону
+Math.floor(Math.random()*10) - воз-ет число от до 10
+
+Math.max(...mas) - воз-т максимальный элемент массива mas
+Math.min(...mas) - воз-т минимальный элемент массива mas
+
+******************************************************************
+    let numMax = Math.max(...arr);
+    let numMin = Math.min(...arr);
+    
+    let expMaxAr = arr.filter(val => val != numMax);
+    let expMinAr = arr.filter(val => val != numMin);
+    
+    let sumExpMax = 0;
+    let sumExpMin = 0;
+    
+    for (let i = 0; i < arr.length; i++) {
+        sumExpMax = +sumExpMax + expMaxAr[i];
+        sumExpMin = +sumExpMin + expMinAr[i];
+    }
+console.log(sumExpMax)
+console.log(sumExpMin)
+
+************************************************************************
+let arr = [1,2,3,4,5];
+function arSum(arr){
+    
+    let numMax = Math.max(...arr);
+    let numMin = Math.min(...arr);
+    
+    let expMaxAr = arr.filter(val => val != numMax);
+    let expMinAr = arr.filter(val => val != numMin);
+    
+    let sumExpMax = 0;
+    let sumExpMin = 0;
+    
+    for (let i = 0; i < arr.length; i++) {
+        sumExpMax = sumExpMax + expMaxAr[i];
+        sumExpMin = sumExpMin + expMinAr[i];
+    }
+    return [sumExpMin, sumExpMax]
+}
+----------------------------------------------------------
+
+
+function arSum(arr){
+    
+    
+let numMax = Math.max(...arr);
+    
+let numMin = Math.min(...arr);
+    
+    
+let expMaxAr = arr.filter(val => val != numMax);
+    
+let expMinAr = arr.filter(val => val != numMin);
+    
+    
+let sumExpMax = 0;
+    
+let sumExpMin = 0;
+    
+    
+for (let i = 0; i < arr.length; i++) {
+        
+sumExpMax = sumExpMax + expMaxAr[i];
+        
+sumExpMin = sumExpMin + expMinAr[i];
+    
+}
+    
+return [sumExpMin, sumExpMax]
+}
+
+************************************************************

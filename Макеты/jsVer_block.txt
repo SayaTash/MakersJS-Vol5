@@ -1,0 +1,52 @@
+var block = document.querySelectorAll('.made_block');
+
+// function het(){
+//     var a = block.style.height;
+//     c = a + "50px"
+//     return c;
+// }
+
+block.forEach(function(item){
+    item.addEventListener('click', function(sub){
+        // het();
+        console.log("click")
+    })
+})
+
+
+------------------
+var block = document.querySelector('.made_block');
+block.addEventListener('click', function(){
+    block.style.height = "140px";
+    console.log("click")
+})
+-----------------------------
+var block = document.querySelector('.made_block');
+var subTitle = document.querySelector('.made_block_subtitle');
+block.addEventListener('click', function(){
+    if(block.style.height = "80px"){
+        block.style.height = "140px"
+        block.style.backgroundColor = "#33d2fd";
+        subTitle.style.display = "block"
+        console.log("click1")
+    }
+    else if(block.style.height = "140px"){
+        block.style.height = "80px"
+        block.style.backgroundColor = "white";
+        subTitle.style.display = "none"
+        console.log("click2")
+    }
+
+})
+-----------------------------------
+
+// $(".made_block").on('click',function(e){
+    
+//     let z = $(this);
+
+//     $(".made_block").height("80px")
+//     z.height("140px")
+
+// })
+
+-----------------------------------

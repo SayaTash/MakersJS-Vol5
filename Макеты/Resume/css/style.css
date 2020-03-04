@@ -1,0 +1,165 @@
+@font-face {
+    font-family: WCManoNegraBta;
+    src: url("../fonts/WCManoNegraBta.otf") format('truetype');
+}
+@font-face {
+    font-family: LatoBold;
+    src: url("../fonts/LatoBold.ttf");
+}
+@font-face {
+    font-family: LatoRegular;
+    src: url("../fonts/LatoRegular.ttf");
+}
+
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: WCManoNegraBta;
+    margin: 10px 0 0 0;
+}
+h2 {
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 50px;
+    font-family: WCManoNegraBta;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: LatoBold;
+    text-transform: uppercase;
+}
+ul {
+    margin: 60px 0 0 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+    list-style-type: none;
+    font-family: LatoBold;
+}
+p {
+    margin: 0;
+    font-family: LatoRegular;
+}
+
+.resume {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p_photo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-size: 100%;
+    background: url("../img/prophil_photoMidl.png") no-repeat center;
+}
+.p_photoSize {
+    width: 300px;
+    height: 300px;
+}
+
+.nav {
+    width: 100%;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 180px;
+}
+.nav p {
+    font-size: 30px;
+    font-family: LatoRegular;
+}
+
+.left {
+    padding-top: 90px;
+    width: 25%;
+    background-color: #0e4678;
+}
+.left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left li {
+    display: flex;
+    margin: 5px 0;
+}
+.left h3 {
+    margin: 0 0 0 5px ;
+}
+ i {
+    display: flex;
+}
+.left p {
+    margin: 0;
+}
+.education li {
+    margin: 5px 0 0 40px;
+}
+.conDisc li {
+    margin-top: 15px;
+}
+.conDisc img {
+    margin-right: 19px;
+    height: 30px;
+    width: 24px;
+}
+
+.rigth {
+    padding: 40px;
+    width: 69%;
+    background-color: #1261a7;
+}
+
+.ProfileSubtitle {
+    margin: 0 0 0 95px;
+}
+.rigth li {
+    margin: 15px 0 0 95px;
+}
+
+.inputs {
+    width: 50%;
+    margin: 0 0 0 95px;
+}
+input {
+    margin: 5px 0;
+    width: 60%;
+}
+.inputs h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.circleSkills {
+    margin: 0 0 0 95px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    color: #1261a7;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: LatoBold;
+}
