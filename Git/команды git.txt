@@ -1,0 +1,23 @@
+git init
+git branch
+git log
+
+git status
+
+ssh-keygen -t rsa -b 4096 -C "taalaibekov@gmail.com"
+
+git config --global user.name "Baiaman Taalaibekov"
+git config --global user.email "taalaibekov003@gmail.com"
+
+git add 
+git commit -m "Название добавления"
+
+git status
+git add . - добавить все изменении
+git status - просмотр статуса изменений
+git commit -m "Название изменения" - отправить 
+git log --oneline - вывод комант в одну колонку
+git push origin master - добавить изменение
+
+
+git pull origin master - скачать изменение 
