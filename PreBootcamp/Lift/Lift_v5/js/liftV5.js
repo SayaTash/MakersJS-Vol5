@@ -24,14 +24,14 @@ var obj = {
         }
     },
     print:function(){
-        // lift.innerHTML = `${obj.floor}` 
-        // lift.style.bottom = (floorHeight * obj.floor - floorHeight)+"px";
+        lift.innerHTML = `${obj.floor}` 
+        lift.style.bottom = (floorHeight * obj.floor - floorHeight)+"px";
         result.innerHTML = `Вы на ${this.floor} этаже`
     },
     toFloor:function(n){ 
         this.print()
-        lift.innerHTML = `${obj.floor}`
-        lift.style.bottom = (floorHeight * obj.floor - floorHeight)+"px";       
+        // lift.innerHTML = `${obj.floor}`
+        // lift.style.bottom = (floorHeight * obj.floor - floorHeight)+"px";       
         if(n == this.floor){
             return
         }

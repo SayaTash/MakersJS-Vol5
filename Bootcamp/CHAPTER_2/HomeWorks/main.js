@@ -1,10 +1,10 @@
-//// 1)-------------------------------------------------------
+//// 1)---------------------------1-----------------------1----------------------------
 // function arg(){
 //     console.log(...arguments);
 // }
 // arg(13, 35, 'Hello');
 
-// 2)--------------------------------------
+// 2)-------------------------2-------------------------2-------------
 // let numb = +prompt('Введите число:')
 // let factor = 1;
 // let funcFactor = function(num, i=1) {
@@ -21,7 +21,7 @@
 // }
 // console.log(factor(numb));
 
-// 3)-----------------------------------------------
+// 3)-------------------3--------------------------3----------------------------
 // let num = +prompt('Введите порядковый номер:');
 // let fib = function(n) {
 //     if (n <= 1) return n;
@@ -32,7 +32,7 @@
 // }
 // console.log(fib(num))
 
-// 4)------------------------------------------
+// 4)------------------------4--------------------------4------------------
 // let num = +prompt('Введите температуру:');
 // let C_to_F = function(c) {
 //     let f = 1.8 * c + 32;
@@ -40,7 +40,7 @@
 // }
 // console.log(C_to_F(num));
 
-// 5)------------------------------------------
+// 5)---------------------------5--------------------5---------------
 // let num = +prompt('Введите число:');
 // let diap1 = function(n){
 //     let mas = [];
@@ -50,7 +50,7 @@
 // }
 // console.log(diap1(num));
 
-// 6)-----------------------------------------
+// 6)-----------------6------------------------------6------------------------
 // let vr = +prompt('Введите время:')
 // let time = function(min){
 //     if (Number.isInteger(min) && min>=0 && min<=60){
@@ -72,14 +72,14 @@
 // console.log(time(vr))
 
 
-// 7)-----------------------------------------------
+// 7)--------------------------7------------------------------7------------
 // let vrem = +prompt('Введите часы:');
 // let time2 = function(h, i=0){
 //     return i < h && Number.isInteger(h) ? h * 3600 : 'Введите числовой тип, больше чем 0'
 // }
 // console.log(`In ${vrem}-hour ${time2(vrem)}-seconds.`)
 
-// 8)-------------------8-------------------------
+// 8)-------------------8---------------8---------------------8----------
 // let num1 = +prompt('Введите first')
 // let num2 = +prompt('Введите second')
 
@@ -89,38 +89,45 @@
 
 // del(num1, num2);
 
-// 9)
-
-let obj = {
+// 9)----------------------9-------------------------9------------
+const elevator = {
     floor: 1,
     maxFloor: 16,
     minFloor: 1,
 
     toFloor: function(num){
-        
-            if (num<=this.maxFloor && num>=this.minFloor){
-                if (this.floor == num){
-                    print();
-                }
-                if(this.floor<=num){
-                    up();
-                }
-                if(this.floor >= num){
-                    down();
-                }
-            }
-            toFloor();
-        
+        this.print();
+        if (num==this.floor)return;
+        if (num<this.minFloor||num>this.maxFloor){
+            console.log('intput is wrogn');
+            return;
+        }
+        if (num>this.floor)this.up();
+        else if(num<this.floor)this.down();
+        elevator.toFloor(num);
     },
     print: function(){
-        console.log(this.floor);
+        console.log(`Elevator is on the floor: ${this.floor}`)
     },
     up: function(){
-        this.floor++
-        print();    },
+        this.floor++;
+    },
     down: function(){
-        this.floor--
-        print();
+        this.floor--;
     }
 }
-obj.toFloor(4)
+// elevator.toFloor(4);
+
+// 1)
+// let val = ''
+// let inp = prompt('Email');
+// let validate = function(email){
+//     for(let i=0; i<email.length; i++){
+//         if (email[i]==='@') {
+//             val = 'email is valid';
+//         }
+//         else val = 'error email';
+//     }
+//     return val;
+// }
+// console.log(validate(inp));

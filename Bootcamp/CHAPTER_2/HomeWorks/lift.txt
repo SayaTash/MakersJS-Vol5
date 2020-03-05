@@ -1,0 +1,23 @@
+/*Вместо ,,, напишите код*/
+const elevator = {
+    floor: 1,
+    maxFloor: 16,
+    minFloor: 1,
+
+    toFloor: function(num){
+        this.,,,();
+        if (,,,)return;
+        if (,,,)this.up();
+        else if(,,,)this.down();
+        elevator.,,,(,,,);
+    },
+    print: function(){
+        console.log(`Elevator is on the floor-${,,,}`)
+    },
+    up: function(){
+        if(,,,) this.,,,++;
+    },
+    down: function(){
+        if(,,,) this.,,,--;
+    }
+}
