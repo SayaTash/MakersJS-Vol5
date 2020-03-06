@@ -90,44 +90,83 @@
 // del(num1, num2);
 
 // 9)----------------------9-------------------------9------------
-const elevator = {
-    floor: 1,
-    maxFloor: 16,
-    minFloor: 1,
+// const elevator = {
+//     floor: 1,
+//     maxFloor: 16,
+//     minFloor: 1,
 
-    toFloor: function(num){
-        this.print();
-        if (num==this.floor)return;
-        if (num<this.minFloor||num>this.maxFloor){
-            console.log('intput is wrogn');
-            return;
-        }
-        if (num>this.floor)this.up();
-        else if(num<this.floor)this.down();
-        elevator.toFloor(num);
-    },
-    print: function(){
-        console.log(`Elevator is on the floor: ${this.floor}`)
-    },
-    up: function(){
-        this.floor++;
-    },
-    down: function(){
-        this.floor--;
-    }
-}
+//     toFloor: function(num){
+//         this.print();
+//         if (num==this.floor)return;
+//         if (num<this.minFloor||num>this.maxFloor){
+//             console.log('intput is wrogn');
+//             return;
+//         }
+//         if (num>this.floor)this.up();
+//         else if(num<this.floor)this.down();
+//         elevator.toFloor(num);
+//     },
+//     print: function(){
+//         console.log(`Elevator is on the floor: ${this.floor}`)
+//     },
+//     up: function(){
+//         this.floor++;
+//     },
+//     down: function(){
+//         this.floor--;
+//     }
+// }
 // elevator.toFloor(4);
 
-// 1)
-// let val = ''
+// 1)------------task3--------------task3----------1----------
 // let inp = prompt('Email');
 // let validate = function(email){
+//     let val = false;
 //     for(let i=0; i<email.length; i++){
 //         if (email[i]==='@') {
-//             val = 'email is valid';
+//             val = true;
 //         }
-//         else val = 'error email';
+//         else val = false;
 //     }
 //     return val;
 // }
-// console.log(validate(inp));
+// alert(validate(inp));
+//----1-------------------------1-------------
+// let valEmail = function(email){
+//     emailReg = /^\w+@\w+\.\w+$/;
+//     return emailReg.test(email);
+// }
+// let mail = prompt('Введите email');
+// console.log(valEmail(mail));
+//-
+//2)-----------------------------2-------------2----
+// let valNum = function(num){
+//     numReg = /^(\+\d{1,3}\s?)|0\d{3,4}\s?\d{2,3}\s?\d{2,3}\s?\d{2}?$/;
+//     if(num[0]=='+')console.log(`Код страны ${num.slice(0,4)}`);
+//     return numReg.test(num);
+// }
+// let myNum = prompt('Введите номер');
+// console.log(valNum(myNum));
+
+//3)--------------------3-----------------------3----------
+// let nums = function(string){
+//     return string.match(/\d+/g)
+// }
+// let str = 'Привет, меня зовут Майкл, мне 20 лет, родился в 1999 году, мой номер телефона +996700405060';
+// console.log(nums(str));
+
+
+// 4)----------------4-----------------4--------------------4
+// let char = function(ch){
+//     return ch.match(/[А-Я]/g);
+// }
+// let str = 'Все Заглавные Буквы.'
+// console.log(char(str))
+//-------------------------------------
+
+// let str = "How Eh ok Lowor Lower Ohhh";
+// let caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// let res = str.split('').filter(function(l){
+//     return ~caps.indexOf(l);
+// });
+// alert(res);
