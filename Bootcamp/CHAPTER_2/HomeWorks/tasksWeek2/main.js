@@ -170,3 +170,96 @@
 //     return ~caps.indexOf(l);
 // });
 // alert(res);
+
+
+// let product=1;
+// let mas = [2,5,9,15,0,4];
+// for (let i = 0; i<mas.length; i++){
+    // if(mas[i]>3 && mas[i]<10) {
+    //     console.log(mas[i])
+    // }
+// }
+// mas.map(function(item){
+//     if(item>3 && item<10) {
+//         console.log(item)
+//     }
+// })
+// mas.forEach(function(item){
+//     if(item>3 && item<10) {
+//         console.log(item)
+//     }
+// })
+
+// let filterArr = mas.filter(function(item){
+//     return item>3 && item<10
+// })
+// console.log(filterArr)
+
+// mas.sort(function(a, b){
+//     return b - a;
+// })
+// console.log(mas)
+
+// let newArr = [];
+// for (let key in console){
+//     console.log(key, console[key]);
+// }
+
+// let arr = Object.keys(console);
+// newArr.sort((a,b) => (a.length - b.length));
+// let newArr = arr.map(item=> (item.toUpperCase()) )
+// console.log(newArr)
+
+
+// let mas = ['вс','пн','вт', 'ср', 'чт','пт','сб'];
+// let day = mas[new Date().getDay()];
+// mas.forEach(function(item){
+//     console.log(item)
+// })
+// console.log(`Сегодня: ${day}`);
+ 
+// let mounth = prompt('Введите число');
+// if(mounth>=3&&mounth<=5){
+//     console.log('Весна');
+// }
+// else if(mounth>=6&&mounth<=8){
+//     console.log('Лето');
+// }
+// else if(mounth>=9&&mounth<=11){
+//     console.log('Осень');
+// }
+// else if(mounth==12||mounth==1||mounth==2){
+//     console.log('Зима');
+// }
+
+// let lang = prompt();
+// let arr = [];
+// if(lang=='ru'){
+//     arr= ['вс','пн','вт', 'ср', 'чт','пт','сб'];
+// }
+// else if(lang=='en'){
+//     arr= ['mon','ts','wd', 'th', 'fr','sat','sun'];
+// }
+// console.log(arr)
+
+
+// let a =+prompt();
+// let b= +prompt();
+// if (a<=1&&b>=3)console.log(a+b);
+// else console.log(a-b);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

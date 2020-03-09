@@ -22,7 +22,7 @@ function recursion(z){
     Lift.style.bottom = (floorHeight*floor-floorHeight)+"px";
     setTimeout(function(){
         if (z==floor){
-            return
+            return;
         }
         if (z<floor && floor > min_floor){
             floor--;
