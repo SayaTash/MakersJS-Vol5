@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .list{
+    padding: 45px;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .list-item{
+    border: 1px solid;
+    border-radius: 14px;
+    width: 26%;
+    padding: 18px;
+    margin: 19px 5px;
+  }
+  .list-item img{
+      width: 100%;
+  }
+  .active{
+    color: blue;
+  }
+

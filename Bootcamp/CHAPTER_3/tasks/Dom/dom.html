@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <h1>DOM</h1>
+    <h3 class="some">Зоголовок третего уровня №1</h3>
+    
+    <p id="code1">Параграф №1</p>
+    <p id="code2">Параграф №2</p>
+    <p id="code3">Параграф №3</p>
+
+    <h3 class="some">Зоголовок третего уровня №2</h3>
+
+    <div id="myDiv">Наш div</div>
+
+
+
+
+
+
+    <script>
+        var par = document.getElementById('code1');
+        par.innerHTML = 'Здес был пораграф';
+
+
+
+        console.log(par.innerHTML);
+    </script>
+</body>
+</html>
