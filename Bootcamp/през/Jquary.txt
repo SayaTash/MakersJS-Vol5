@@ -1,0 +1,29 @@
+$(document).ready(function(){//code})
+сначала jquery потом main
+$(p h2)  h2 внутри p
+$(.class)
+$(#id)
+$(div.parent > div)
+$(h2 + p)
+$(h2 ~ p)
+$(p:first)
+$(p:last)
+$(p:even)
+$(p:odd)
+$(p:eq(2))
+$(h3:has(span))
+$(.box:parent)
+$(.box:empty)
+$(a[href="https"])
+$(a[href!="https"])
+
+
+$("h1").fadeOut(3000);//fadeIn
+
+$("body").append(`<p>Hello</p>);
+
+сигнал от броузера
+в html
+button.onclick = function();
+
+

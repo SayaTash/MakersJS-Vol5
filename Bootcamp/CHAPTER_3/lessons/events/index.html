@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <script src="./js/events.js"></script>
+</head>
+<body>
+    <input type="text" class="inp">
+    <h1>Press key</h1>
+    <!-- <button onclick="a()">Click</button> -->
+
+    <!-- <div style="background-color: blue;">
+        <p class="p1" style="background-color: red;">
+            <button class="btn1">btn1</button>
+        </p>
+        <p class="p2" style="background-color: green;">
+            <button class="btn2">btn2</button>
+        </p>
+    </div> -->
+    <script>
+        let btn1 = document.querySelector('.btn1');
+        let p1 = document.querySelector('.p1');
+        let div = document.querySelector('div');
+        // btn1.addEventListener('click', function(event){
+        //     console.log(this, event.target, event.currentTarget);
+        // })
+        // p1.addEventListener('click', function(){
+        //     console.log(this, event.target, event.currentTarget);
+        // })
+        // div.addEventListener('click', function(){
+        //     console.log(this, event.target, event.currentTarget);
+        // })
+
+        // window.addEventListener('mousemove', function(e){
+        //     console.log('X: '+ e.clientX, 'Y: ' + e.clientY);
+        // })
+        // div.addEventListener('mousemove',function(e){
+        //     e.stopPropagation();
+        // })
+
+        // btn1.addEventListener('click', function(){
+        //     alert('CLICK')
+        // })
+        // let ev = new Event('click');
+        // btn1.dispatchEvent(ev);
+
+        // let h1 = document.querySelector('h1');
+        // window.addEventListener('keyup', function(e){ //keyup, keydown,key...
+        //     console.log(e);
+        //     // h1.innerText += e.key
+        // })
+
+        let inp = document.querySelector('.inp');
+        let h1 = document.querySelector('h1');
+        window.addEventListener('input', function(e){ //input, change
+            // console.log(e);
+            h1.innerText = e.target.value
+        })
+    </script>
+</body>
+</html>

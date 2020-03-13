@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery_2</title>
+    <script src="./js/jQuery.js"></script>
+</head>
+<body>       <!--  self -->
+        <form target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLScjPeOwwb2CmkQc-ofltTg5hAhgbJyqOpj_sQ7pDeeM14rn5w/formResponse"> -->
+        <input type="text" name="entry.1813242318" required>
+        <input type="text" name="entry.1079311450" minlength="3">
+        <input type="text" name="entry.202892922">
+        <input type="tel" name="tel" pattern="[0-9]{6,9}">
+        <input type="submit" value="OK">
+    </form>
+
+
+
+    <!-- <script>
+        let form = $('form');
+        let btn = $('input[type="submit"]');
+        btn.on('click', function(e){
+            e.preventDefault();
+            console.log(form.serialize());
+        })
+    </script>  -->
+    <style>
+        .tasks{
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .newBtn{
+            margin: 10px;
+        }
+    </style>
+
+    <div class="main">
+        <button id="btn">OK</button>
+    </div>
+    <div class="tasks">
+        <button class="newBtn">new button</button>
+        <button class="newBtn">new button</button>
+    </div>
+    
+    <script>
+        $('#btn').click(function(){
+            // $('.tasks').append(`<button class="newBtn">new button</button>`);
+            $('.newBtn').on('click', function(){
+            alert('Hello');
+            });
+        });
+        // $('.tasks ').on('dblclick', '.newBtn', function(){
+        //     alert('Hello');
+        // });
+    </script>
+</body>
+</html>
