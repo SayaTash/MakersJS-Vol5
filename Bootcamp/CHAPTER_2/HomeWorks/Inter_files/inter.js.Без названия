@@ -1,0 +1,14 @@
+let mas = [];
+for (let i=1; i<100;i++){
+    mas.push(i);
+    if(i%3==0 && i%5==0){
+        console.log(`for ${i}`)
+    }
+    // console.log('no')
+}
+ 
+mas.forEach(i=>{
+    if(i%3==0 && i%5==0){
+        console.log(`forEach ${i}`)
+    } 
+})

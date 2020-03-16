@@ -7,9 +7,15 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     color: black;
+    margin-top: 100px;
+  }
+  form:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   
   div {
@@ -19,6 +25,13 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+    color: white;
+  }
+  div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   
   p {
