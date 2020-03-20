@@ -5,21 +5,21 @@
 // arg(13, 35, 'Hello');
 
 // 2)-------------------------2-------------------------2-------------
-// let numb = +prompt('Введите число:')
-// let factor = 1;
-// let funcFactor = function(num, i=1) {
-//     if (i <= num){
-//         factor *= i;
-//         funcFactor(num, i+1);
-//     }
-//     return factor;
-// }
-// console.log(funcFactor(numb));
+let numb = +prompt('Введите число:')
+let factor = 1;
+let funcFactor = function(num, i=1) {
+    if (i <= num){
+        factor *= i;
+        funcFactor(num, i+1);
+    }
+    return factor;
+}
+console.log(funcFactor(numb));
 
-// let factor = function(n){
-//     return n===1 ? 1 : n*factor(n-1)
-// }
-// console.log(factor(numb));
+let factor = function(n){
+    return n===1 ? 1 : n*factor(n-1)
+}
+console.log(factor(numb));
 
 // 3)-------------------3--------------------------3----------------------------
 // let num = +prompt('Введите порядковый номер:');
