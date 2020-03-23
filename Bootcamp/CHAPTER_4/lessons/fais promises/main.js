@@ -147,7 +147,8 @@ function render(){
           data.map(item=>{
             $('.list').append(`
             <li>
-                <span>Задаца №${item.id}</span> - ${item.task}
+                <span>Задача №${item.id}</span> - ${item.task}
+                <button data-event="${item.task}" class="btnUpdate">Update</button>
             </li>
         `)
           })
@@ -159,4 +160,13 @@ function render(){
 
 
 }
+
+
+$('.list').on('click', '.btnUpdate', function(e){
+  let target = $(e.target);
+  let event = target.attr('data-event');
+  console.log(event)
+})
+
+
 

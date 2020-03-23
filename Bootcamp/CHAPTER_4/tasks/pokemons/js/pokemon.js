@@ -40,12 +40,12 @@ list.on('click', '.li', function(e){
             let arrTypes = [];
             data.types.forEach(item=>{arrTypes.push(item.type.name)});
             modContent.append(`
-                <span class="clouse">x</span>
-                <li>Имя: ${data.name}</li>
-                <li>Тип: ${arrTypes}</li>
-                <li>Рост: ${data.height}</li>
-                <li>Вес: ${data.weight}</li>
-                <li><span>Фото: <img src="${data.sprites.front_default}"></span></li>
+            <li>Имя: ${data.name}</li>
+            <li>Тип: ${arrTypes}</li>
+            <li>Рост: ${data.height}</li>
+            <li>Вес: ${data.weight}</li>
+            <li><span>Фото: <img src="${data.sprites.front_default}"></span></li>
+            <div class="clouse"></div>
             `)
         },
         error: function(error){
