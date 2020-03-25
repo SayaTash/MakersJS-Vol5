@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> 
+    
+</head>
+<body>
+    <input type="text" placeholder="Имя" id="name">
+    <input type="text" placeholder="Фамилие" id="surname">
+    <input type="number" placeholder="Номер" id="number">
+    <button class="btn">Add</button>
+    <ul class="list"></ul>
+    <!-- #modal - это id элемента DIV, который будет определен в коде ниже -->
+<a href="#modal" name="modal">Простое модальное окно</a>
+
+<!-- #customize - здесь будет располагаться модальное окно -->
+<div id="modal" class="modalwindow">
+
+    <!-- Заголовок модального окна -->
+    <h2>Простое jQuery модальное окно</h2>
+
+    <!-- кнопка закрытия окна определяется как класс close -->
+    <a href="#" class="close">X</a>
+
+    <div class="content">
+        <!-- Содержимое модального окна -->
+    </div>
+
+</div>
+   <script src="./js/main.js"></script>
+</body>
+</html>
